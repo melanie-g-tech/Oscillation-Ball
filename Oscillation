@@ -1,0 +1,76 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Extra Credit</title>
+    <style type="text/css">
+        #circle{
+            background-color:green;
+            -webkit-border-radius: 50%;
+            -moz-border-radius: 50%;
+            border-radius: 50%;
+            width: 200px;
+            height: 200px;
+            animation-duration: 10s;
+            animation-name:travel;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+
+        }
+
+        @keyframes travel {
+          0% {transform: translateX(200px);
+            box-shadow: 0px 20px 52px 4px black;
+            -webkit-box-shadow:  0px 20px 52px 4px black;
+            -moz-box-shadow:  0px 20px 52px 4px black;
+            -o-box-shadow:  0px 20px 52px 4px black;
+
+        }
+          20% {transform: translateX(-150px);
+            box-shadow: -30px 40px 52px 4px black;
+            -webkit-box-shadow:  -30px 40px 52px 4px black;
+            -moz-box-shadow:  -30px 40px 52px 4px black;
+            -o-box-shadow:  -30px 40px 52px 4px black;
+
+        }
+          100% {transform: translateX(900px);
+            box-shadow: 35px 40px 52px 4px black;
+            -webkit-box-shadow:  30px 40px 52px 4px black;
+            -moz-box-shadow:  35px 40px 52px 4px black;
+            -o-box-shadow:  35px 40px 52px 4px black;
+}
+          0% {transform: translatex(100px);
+            box-shadow: 0px 20px 52px 4px black;
+            -webkit-box-shadow:  0px 20px 52px 4px black;
+            -moz-box-shadow:  0px 20px 52px 4px black;
+            -o-box-shadow:  0px 20px 52px 4px black;
+}
+}
+        
+        div{
+            position:relative;
+            margin-top: 200px;
+            margin-left: 200px;
+            background:-webkit-radial-gradient(center,lightgreen,green);
+            background:-moz-radial-gradient(center,lightgreen,green);
+            background:-webkit-radial-gradient(center,lightgreen,green);
+            background:-o-radial-gradient(center,lightgreen,green);
+            animation:moving 4s linear infinite;
+
+
+        }
+        </style>
+</head> 
+<body>
+    <strong>
+        <font size="+4">
+    <p>This is Jane Doe's oscillation Ball.........</p>
+        </font>
+    </strong>
+    <div class="circle" id="circle">
+    
+    </div>
+
+</body>
+</html>
+
